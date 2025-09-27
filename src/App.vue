@@ -1,11 +1,16 @@
-<script setup></script>
+<script setup>
+import { ref } from 'vue'
+const person = ref({
+  name: 'John Doe',
+  age: 30,
+  occupation: 'Developer'
+})
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <div>
+    <h1>{{ person.name }}</h1>
+    <p>Age: {{ person.age }}</p>
+    <p>Occupation: {{ person.occupation }}</p>
+  </div>
 </template>
-
-<style scoped></style>
