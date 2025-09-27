@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+
 const person = ref({
   name: 'John Doe',
   age: 30,
