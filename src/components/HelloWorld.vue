@@ -5,6 +5,7 @@ import { ref } from 'vue'
 defineProps(['msg'])
 
 const count = ref(9)
+const numbers = ref([1, 2, 3, 4, 5])
 </script>
 
 <template>
@@ -17,5 +18,9 @@ const count = ref(9)
             <input type="range" min="1" max="100" v-model="count"></input>
             <button type="button" @click="count++">count is {{ count }}</button>
         </div>
+
+        <ul>
+            <li v-for="number in numbers" :key="number">{{ number }}</li>
+        </ul>
     </div>
 </template>
