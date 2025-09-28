@@ -1,13 +1,10 @@
 <script setup>
-import { ref } from 'vue'
-
-const count = ref(0)
-
-const increment = () => {
-  count.value++
-}
+import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-<button @click="increment">Count is: {{ count }}</button>
+  <HelloWorld msg="Vite + Vue" />
 </template>
+
+<style scoped>
+</style>
