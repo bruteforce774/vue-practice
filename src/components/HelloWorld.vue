@@ -9,7 +9,8 @@ const count = ref(9)
 
 <template>
     <div>
-        <h1 v-show="count<10">Mindre enn 10</h1>
+        <h1 v-if="count<10">Mindre enn 10</h1>
+        <h1 v-else>10 eller mer</h1>
 
         <div>
             <input type="range" min="1" max="100" v-model="count"></input>
